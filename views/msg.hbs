@@ -1,0 +1,50 @@
+{{!-- head --}}
+{{>head}}
+
+<style>
+    body{
+    background-image: none;
+    background-color: white;
+    
+    } 
+    .dicaprio{
+        text-align: center;
+        margin: 3rem;
+        
+    }
+     .dicaprio img{
+         height: 160px;
+         width: 275px;
+    }
+     h2{
+        text-align: center;
+        margin:2rem;
+        font-family: 'Ephesis', cursive;
+        text-shadow: 2px 2px 8px rgb(255 132 204);
+    }
+    @media (min-width: 768px){
+     .dicaprio img{
+        height: 300px;
+        width:  549px; 
+    };
+    };
+
+   
+
+</style> 
+
+<body>
+    <header>
+        {{>header}}
+        {{>navBar}}
+    </header>
+    <h2>Leeremos tu consulta...</h2>
+    <div class="dicaprio img">
+        <img src="./assets/dicaprio.jpeg" alt="dicaprio">
+    </div>
+
+
+    {{>footer}}
+</body>
+    {{>scripts}}
+</html>

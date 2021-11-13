@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body */
+body{
+    border:1px solid black;
+    background-image: url(/assets/hearts2.jpg);
+    background-size: cover;
+}
+/*HEADER*/
+
+/* Encabezado y Titulo*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    height: 8rem;
+    align-items: center;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bannerTitle {
+    font-family: 'Ephesis', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgb(255, 132, 204);
+    margin: 0;
+}
+
+/*MEDIA ICONS HEADER*/
+
+.mediaIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    column-gap: 0.2rem;
+    margin-right: 1rem;
+}
+
+.icon-m {
+    margin: 0.2rem;
+}
+
+ /*Iconos media*/
+ svg {
+    color:rgb(228, 57, 157);
+}
+svg:hover {
+    color:black;
+    transition: all 0.7s;
+    
+}
+
+
+/*Barra de nav Header*/
+.navbar {
+    border-bottom: 1px solid black;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 132, 204);
+}
+
+/*Boton*/
+.navbar-light .navbar-toggler {
+    border-color: rgb(216 44 145);
+}
+
+/*CAROUSEL*/
+
+/*Titulo carousel*/
+
+.tituloGaleria h3,
+.carousel-title h3,
+.formSection h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Ephesis', cursive;
+    text-shadow: 1px 1px 2px rosybrown;
+}
+
+/*container fotos*/
+.carousel-inner {
+    border: 3px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+/* galeria de imagenes */
+.Gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imagenesGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.imagenesGaleria img {
+    width: 80%;
+    border: 1px solid black;
+    height: 100%;
+    
+}
+.imagenesGaleria:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+}
+
+/* Titulos imagenes*/
+.picTitle {
+	position: relative;
+	bottom: -50px;
+	margin-left: 10px;
+	opacity: 0;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.picTitle p {
+	margin: 0;
+	color: #fff;
+	font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+}
+.imagenesGaleria:hover .picTitle {
+	opacity: 1;
+	bottom: 26px;
+}
+
+
+/* formulario de consultas */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datosPersonales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiquetas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2px;
+}
+
+.menuArte {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textArea label {
+    margin: 0.8rem;
+}
+
+
+/*Button Forms*/
+
+.btnsForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-outline-dark {
+    color: black;
+    border-color: #212529;
+}
+
+/*FOOTER*/
+.myFooter {
+    display: flex;
+    border-top: 1px solid black;
+    background-color: #E0EAFF;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0;
+    flex-direction: column;
+}
+
+.btnFooter {
+    margin: 1rem;
+}
+
+.btnFooter a {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+/* Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+
+    body{
+        border: 0.5px solid black; 
+    }
+    main{
+        border: 1px solid black;
+    }
+   
+    /*Banner titulo*/
+    .bannerTitle {
+        font-size: 3.5rem;
+    }
+   
+    /*HOME LETRA*/
+    .navbar-light .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+
+    /* todos los h3*/
+    .tituloGaleria h3,
+    .carousel-title h3,
+    .formSection h3 {
+        font-size: 3rem;
+    }
+    /*los nombres de los productos*/
+    .picTitle p{
+        font-size: 1.4rem;
+    }
+  
+
+    /*formulario*/
+    fieldset{
+        width: 80%;
+    }
+    .datosPersonales,.menuArte,textArea,.etiquetas{
+        width:100%;
+    }
+    .menuArte {
+        flex-direction: column;
+        row-gap: 0.5rem;
+        margin: 0;
+        margin-top: 0.5rem;
+        align-items: flex-start;
+    }
+    .datosPersonales input{
+        width:60%;
+    }
+    .btnsForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        align-items: center;
+        margin-top: 1rem;
+        column-gap: 1rem;
+    }
+    /* carousel botones */
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        background-color: #c37bbb;
+        border-radius: 15%;
+    }
+
+    
+    /*footer*/
+    .myFooter {
+        margin: 0;
+        margin-top: 1rem;
+        
+    }
+    .text-muted {
+        color: #000000!important;
+    }
+
+
+}
+
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+
+    
+    .carousel-inner {
+        border: 3px solid black;
+        width: 30%;
+        margin: auto;
+    }
+    .datosPersonales input {
+        width: 100%;
+    }
+
+    .picTitle p{
+        font-size: 2rem;
+    }
+
+
+}

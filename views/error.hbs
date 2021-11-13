@@ -1,0 +1,39 @@
+
+
+{{!-- head --}}
+{{>head}}
+
+ <style>
+    body{
+    background-image: none;
+    background-color: white;
+    } 
+    .oops{
+        text-align: center;
+        margin: 3rem;
+    }
+    h2{
+        text-align: center;
+        margin:2rem;
+        font-family: 'Ephesis', cursive;
+        text-shadow: 2px 2px 8px rgb(255 132 204);
+    }
+
+
+</style> 
+
+<body>
+    <header>
+        {{>header}}
+        {{>navBar}}
+    </header>
+<h2>UPS!</h2>   
+    <div class="oops">
+        <img src="./assets/oops.jpeg" alt="oops">
+    </div>
+    
+    {{>footer}}
+</body>
+    {{>scripts}}
+</html>
+

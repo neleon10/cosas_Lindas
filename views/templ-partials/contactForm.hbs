@@ -1,0 +1,54 @@
+<!--Formulario de consultas-->
+<section class="formSection">
+  <h3>Formulario de consulta</h3>
+  <form action="/save" class="formulario" method="post">
+    <fieldset>
+
+      <!--Datos personales-->
+      <div class="datosPersonales">
+        <div class="etiquetas">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" name="nombre" required />
+        </div>
+        <div class="etiquetas">
+          <label for="apellido">Apellido</label>
+          <input id="apellido" type="text" name="apellido" required />
+        </div>
+        <div class="etiquetas">
+          <label for="email">E-Mail</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+      </div>
+      <!--Etiqueta select-->
+      <div class="menuArte">
+        <label for="arte">Elegí tu arte</label>
+        <select name="arte" id="arte">
+          <option id="noOptSelected" value="nooption">...</option>
+          <option value="almohadones">Almohadones</option>
+          <option value="muñecas">Muñecas</option>
+          <option value="apego">Apego</option>
+          <option value="otro">otro</option>
+        </select>
+      </div>  
+      
+      <!--Text Area-->
+      <div class="textArea">
+        <label for="campodeconsulta">Escribí tu consulta</label>
+        <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
+      </div>
+
+      <!--Botones tanto del modal como del form.-->
+      <div class="btnsForm">
+        <input
+          class="btn btn-outline-dark"
+          type="submit"
+          value="Envia tu consulta"
+        />
+        {{!-- boton limpiar --}}
+        <input class="btn btn-outline-dark" type="reset" value="limpiar" />
+      </div>
+    </fieldset>
+  </form>
+</section>
+
+
