@@ -1,8 +1,9 @@
+require("dotenv").config()
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
 const conexion = require('./database/db');
-const port = 5000;
+const PORT = process.env.PORT;
 
 //handlebars
 app.set('view engine','hbs');
@@ -20,6 +21,6 @@ app.use('/',rutas);
 
 
 //port
-app.listen(port,()=>{
+app.listen(PORT,()=>{
     console.log('Escuchando');
 });
