@@ -7,11 +7,27 @@
     body{
     background-image: none;
     background-color: white;
-    } 
-    .underCons{
-        text-align: center;
-        margin: 3rem;
     }
+    .UnderConsMainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .underCons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 400px){
+        
+       .underCons img {
+           width: 220px;
+           margin: 3rem;
+       }
+    }
+    
+
     h2{
         text-align: center;
         margin:2rem;
@@ -27,11 +43,13 @@
         {{>header}}
         {{>navBar}}
     </header>
-<h2>Oh! My Darling!</h2>   
-    <div class="underCons">
-        <img src="./assets/underC.jpg" alt="underConstruction">
+<h2>Oh! My Darling!</h2> 
+    <div class="UnderConsMainContainer">
+        <div class="underCons">
+            <img src="./assets/underC.jpg" alt="underConstruction">
+        </div>
     </div>
-    
+
     {{>footer}}
 </body>
     {{>scripts}}
