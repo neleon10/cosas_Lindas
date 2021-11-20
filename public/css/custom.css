@@ -230,7 +230,22 @@ svg:hover {
     color:black;
 }
 
+/* mapa responsive */
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin:3rem;
+    margin-top: 2rem;
+    
+}
 
+.mapaContent iframe {
+    padding: 1px, 1px, 1px;
+    width: -webkit-fill-available;
+    border-radius: 20%;
+    border-spacing: 5px;
+    border:1px solid black;
+  }
 
 
 /* Móviles en horizontal o tablets en vertical
